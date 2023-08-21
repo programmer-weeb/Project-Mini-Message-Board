@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>Welcome to <%= title %>
+  </p>
+
+  <!-- loop through mess arr -->
+  <ul>
+    <% for(let mess of messages) { %>
+      <li><%= mess.user %></li>
+      <% } %>
+  </ul>
+
+  <hr>
+  <ul>
+    <% messages.forEach(obj => { %>
+     <li><%= obj.text %></li>
+     <li><%= obj.user %></li>
+     <li><%= obj.added %></li>
+     <br>
+    <% }) %>
+  </ul>
+</body>
+
+</html>
