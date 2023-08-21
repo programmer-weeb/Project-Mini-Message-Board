@@ -1,18 +1,19 @@
 var express = require('express');
+const messages = require('../messages');
 var router = express.Router();
 
-const messages = [
-  {
-    text: "Hi there!",
-    user: "Amando",
-    added: new Date()
-  },
-  {
-    text: "Hello World!",
-    user: "Charles",
-    added: new Date()
-  }
-];
+//  let messages = [
+//   {
+//     text: "Hi there!",
+//     user: "Amando",
+//     added: new Date()
+//   },
+//   {
+//     text: "Hello World!",
+//     user: "Charles",
+//     added: new Date()
+//   }
+// ];
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -20,3 +21,10 @@ router.get('/', function (req, res, next) {
 });
 
 module.exports = router;
+// module.exports = {
+//   router: router,
+//   messages: messages,
+// }
+
+
+// post method
