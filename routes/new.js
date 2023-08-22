@@ -2,11 +2,9 @@ const express = require('express');
 let messages = require('../messages');
 const router = express.Router();
 
-/* GET users listing. */
+// return form view
 router.get('/', function (req, res, next) {
-  // res.send('respond with a resource');
   res.render('form', {});
-
 });
 
 router.post('/', async (req, res) => {
