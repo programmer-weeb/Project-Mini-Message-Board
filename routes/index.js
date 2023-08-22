@@ -1,6 +1,6 @@
-var express = require('express');
+const express = require('express');
 const messages = require('../messages');
-var router = express.Router();
+const router = express.Router();
 
 //  let messages = [
 //   {
